@@ -1,0 +1,27 @@
+{
+  "name": "aha-develop-justin.sentry-tester",
+  "description": "Sentry Tester",
+  "version": "0.0.0",
+  "author": "justinpaulson",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "aha-cli": "1.9.4"
+  },
+  "ahaExtension": {
+    "cspSources": [
+      "https://sentry.io"
+    ],
+    "contributes": {
+      "importers": {
+        "sentryImporter": {
+          "title": "SampleImporter",
+          "entryPoint": "src/importers/sentryImporter.js"
+        }
+      }
+    }
+  }
+}
